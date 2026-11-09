@@ -82,7 +82,7 @@ footer{color:var(--muted);font-size:13px}
       <div class="eyebrow">MyHeart × NADI · Effectiveness so far</div>
       <h1>From screening <span>to action</span></h1>
     </div>
-    <div class="asof">Latest totals from the MyHeart-ProtectHealth deck · breakdowns dated per panel</div>
+    <div class="asof">Data to 8 Nov 2026 · MyHeartRisk platform export</div>
   </header>
 
   <nav role="tablist" aria-label="Dashboard views">
@@ -97,21 +97,21 @@ footer{color:var(--muted);font-size:13px}
   <section class="panel" id="v-reach">
     <p class="lede">Screening runs in community NADI centres and <em>grows fast</em> once centres get on-site support.</p>
     <div class="grid">
-      <div class="kpi"><b data-count="1887">1,887</b><span>people screened</span></div>
+      <div class="kpi"><b>1,899</b><span>screenings (1,857 people)</span></div>
       <div class="kpi"><b data-count="1562">1,562</b><span>NADI staff trained</span></div>
-      <div class="kpi"><b>231</b><span>centres screening (of 1,098) · 22 Oct</span></div>
+      <div class="kpi"><b>233</b><span>NADI centres screening (of 1,098)</span></div>
       <div class="kpi"><b>90.4</b><span>usability score (SUS), excellent</span></div>
     </div>
     <div class="two">
       <div class="card">
         <h3>Cumulative screenings</h3>
-        <div style="overflow-x:auto"><svg id="growth" viewBox="0 0 560 260" width="100%" role="img" aria-label="Cumulative screenings rose from 531 on 7 September to 1,887 at the latest count"></svg></div>
-        <p class="note">3.2× growth in six weeks after physical training visits began.</p>
+        <div style="overflow-x:auto"><svg id="growth" viewBox="0 0 560 260" width="100%" role="img" aria-label="Cumulative screenings rose from 531 on 7 September to 1,899 on 8 November"></svg></div>
+        <p class="note">3.6× growth in two months after physical training visits began.</p>
       </div>
       <div class="card">
         <h3>Sarawak leads the network</h3>
         <div class="rows">
-          <div class="row"><span>Sarawak share of all screenings</span><span class="v">34.0%</span><div class="bar" style="grid-column:1/-1"><i style="width:34%;background:var(--accent)"></i></div></div>
+          <div class="row"><span>Sarawak share of all screenings (737)</span><span class="v">38.8%</span><div class="bar" style="grid-column:1/-1"><i style="width:38.8%;background:var(--accent)"></i></div></div>
           <div class="row"><span>Sarawak share of screenings, 12–22 Oct</span><span class="v">87%</span><div class="bar" style="grid-column:1/-1"><i style="width:87%;background:var(--accent)"></i></div></div>
           <div class="row"><span>Visited Sarawak centres that screened their first participant, 12–22 Oct</span><span class="v">17</span></div>
         </div>
@@ -125,13 +125,13 @@ footer{color:var(--muted);font-size:13px}
     <p class="lede">About <em>three in ten</em> people screened are at moderate or high 10-year cardiovascular risk.</p>
     <div class="two">
       <div class="card" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;align-items:center">
-        <svg id="donut" viewBox="0 0 220 220" width="100%" style="max-width:260px;margin:auto" role="img" aria-label="Risk distribution: 1,333 low, 332 moderate, 221 high"></svg>
+        <svg id="donut" viewBox="0 0 220 220" width="100%" style="max-width:260px;margin:auto" role="img" aria-label="Risk distribution: 1,344 low, 333 moderate, 192 high"></svg>
         <div class="legend" id="legend"></div>
       </div>
       <div class="card">
         <h3>Select a group</h3>
         <p id="riskText" style="font-size:19px;margin:0 0 10px"></p>
-        <p class="note">Framingham 10-year risk, people without prior heart attack, latest deck count (n = 1,886 classified). Most scores use non-laboratory FRS because cholesterol was not measured.</p>
+        <p class="note">Framingham 10-year risk, people without prior heart attack, n = 1,869; the 30 people with a prior heart attack are scored with the ACS model instead. For 85% of screenings cholesterol was not measured, so FRS uses default lipid values (non-laboratory FRS).</p>
         <p class="note">Perak pilot comparison: 37.8% moderate/high (31 of 82).</p>
       </div>
     </div>
@@ -144,18 +144,18 @@ footer{color:var(--muted);font-size:13px}
       <div class="card">
         <h3>Raised BP vs known hypertension</h3>
         <div class="rows">
-          <div class="row"><span>Systolic BP ≥140 mmHg at screening</span><span class="v">18.2%</span><div class="bar" style="grid-column:1/-1"><i style="width:18.2%;background:var(--high)"></i></div></div>
-          <div class="row"><span>Reported known hypertension</span><span class="v">14.4%</span><div class="bar" style="grid-column:1/-1"><i style="width:14.4%;background:var(--info)"></i></div></div>
+          <div class="row"><span>Systolic BP ≥140 mmHg at screening</span><span class="v">18.8%</span><div class="bar" style="grid-column:1/-1"><i style="width:18.8%;background:var(--high)"></i></div></div>
+          <div class="row"><span>Reported known hypertension</span><span class="v">16.8%</span><div class="bar" style="grid-column:1/-1"><i style="width:16.8%;background:var(--info)"></i></div></div>
         </div>
-        <p class="note">The difference points to undiagnosed hypertension now being referred. n = 1,575, 19 Oct 2026.</p>
+        <p class="note"><b style="color:var(--fg)">236 people (12.4%)</b> had systolic BP ≥140 with no known hypertension: likely undiagnosed, now flagged for review. n = 1,899.</p>
       </div>
       <div class="card">
         <h3>Who is at high risk</h3>
         <div class="rows">
-          <div class="row"><span>Men at high risk</span><span class="v">23.5%</span><div class="bar" style="grid-column:1/-1"><i style="width:23.5%;background:var(--accent)"></i></div></div>
-          <div class="row"><span>Women at high risk</span><span class="v">2.8%</span><div class="bar" style="grid-column:1/-1"><i style="width:2.8%;background:var(--accent)"></i></div></div>
+          <div class="row"><span>Men at high risk</span><span class="v">23.3%</span><div class="bar" style="grid-column:1/-1"><i style="width:23.3%;background:var(--accent)"></i></div></div>
+          <div class="row"><span>Women at high risk</span><span class="v">3.5%</span><div class="bar" style="grid-column:1/-1"><i style="width:3.5%;background:var(--accent)"></i></div></div>
         </div>
-        <p class="note">Men were about eight times as likely as women to be at high risk. Useful for targeting ProtectHealth outreach.</p>
+        <p class="note">Men were about seven times as likely as women to be at high risk, yet only 34% of people screened were men. Useful for targeting ProtectHealth outreach.</p>
       </div>
     </div>
   </section>
@@ -172,9 +172,9 @@ footer{color:var(--muted);font-size:13px}
       <p class="note">Recruitment report, 7 Sep 2026 (243 participants with delivery data). Refresh from the dashboard if newer figures exist.</p>
     </div>
     <div class="grid">
-      <div class="kpi"><b>871</b><span>centres with no participant yet (22 Oct)</span></div>
+      <div class="kpi"><b>865</b><span>centres with no participant yet</span></div>
       <div class="kpi"><b>—</b><span>referral completion at clinic: not yet measured</span></div>
-      <div class="kpi"><b>~1.5</b><span>participants per centre on average</span></div>
+      <div class="kpi"><b>1.7</b><span>screenings per centre across the network</span></div>
     </div>
   </section>
 
@@ -200,7 +200,7 @@ footer{color:var(--muted);font-size:13px}
     <p class="note">Control participants still receive their result and referral letter. Keeping the letter alone does not count as action.</p>
   </section>
 
-  <footer>Sources: MyHeart-ProtectHealth deck (traction slide); NADI × MyHeartRisk Bulletin Ed. 1 (22 Oct 2026); MCMC Phase 2 proposal (21 Oct 2026); NADI MyHeartRisk Recruitment Report (7 Sep 2026); trial protocol (JMIR v4). Interim, descriptive data, not trial results.</footer>
+  <footer>Sources: MyHeartRisk platform export (8 Nov 2026); NADI × MyHeartRisk Bulletin Ed. 1 (22 Oct 2026); MCMC Phase 2 proposal (21 Oct 2026); NADI MyHeartRisk Recruitment Report (7 Sep 2026); trial protocol (JMIR v4). Interim, descriptive data, not trial results.</footer>
 </div>
 
 <script>
@@ -217,7 +217,7 @@ footer{color:var(--muted);font-size:13px}
   show(location.hash.slice(1));
 
   // Growth chart
-  const pts=[['7 Sep',531],['19 Oct',1607],['22 Oct',1702],['Latest',1887]];
+  const pts=[['7 Sep',531],['30 Sep',1275],['22 Oct',1703],['8 Nov',1899]];
   const g=document.getElementById('growth'),W=560,H=260,L=56,R=24,T=20,B=40,max=2000;
   const x=i=>L+i*(W-L-R)/(pts.length-1), y=v=>T+(H-T-B)*(1-v/max);
   let s='';
@@ -232,9 +232,9 @@ footer{color:var(--muted);font-size:13px}
   g.innerHTML=s;
 
   // Donut + legend
-  const groups=[{k:'Low',n:1333,c:'var(--low)',t:'Low risk: keep healthy habits; periodic tips through MyHeartCoach.'},
-                {k:'Moderate',n:332,c:'var(--mod)',t:'Moderate risk: eligible for referral and digital nudges in the trial.'},
-                {k:'High',n:221,c:'var(--high)',t:'High risk: referral letter to the nearest Klinik Kesihatan on the day of screening.'}];
+  const groups=[{k:'Low',n:1344,c:'var(--low)',t:'Low risk: keep healthy habits; periodic tips through MyHeartCoach.'},
+                {k:'Moderate',n:333,c:'var(--mod)',t:'Moderate risk: eligible for referral and digital nudges in the trial.'},
+                {k:'High',n:192,c:'var(--high)',t:'High risk: referral letter to the nearest Klinik Kesihatan on the day of screening.'}];
   const tot=groups.reduce((a,b)=>a+b.n,0), d=document.getElementById('donut'), lg=document.getElementById('legend'), rt=document.getElementById('riskText');
   const C=2*Math.PI*80; let off=0, sel=null;
   function draw(){
